@@ -6,7 +6,7 @@ A web application that helps students explore career paths using role explainers
 ## Features
 - Role Explainer
 - Career Roadmaps
-- Skill Recommendations
+- Career guide
 
 ## Tech Stack
 - HTML, CSS, JavaScript
