@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Dashboard</h2>
+
+    <button class="nav-btn" onclick="showSection('role')">Role Explainer</button>
+    <button class="nav-btn" onclick="showSection('roadmap')">Roadmap</button>
+    <button class="nav-btn" onclick="showSection('guide')">Guide Quiz</button>
+
+    <button id="themeToggle">🌙</button>
+</div>
+
+<!-- Main Section -->
+<div class="main">
+
+    <!-- ROLE EXPLAINER -->
+    <section id="role" class="section">
+        <h1>Role Explainer</h1>
+
+        <input id="jobSearch" type="text" placeholder="Search profession...">
+        <div id="suggestions"></div>
+
+        <div id="loader" class="loader" style="display:none;"></div>
+        <div id="jobResult"></div>
+    </section>
+
+
+    <!-- ROADMAP SECTION -->
+    <section id="roadmap" class="section hidden">
+        <h1>Roadmap / Skillmap</h1>
+
+        <input id="roadmapSearch" type="text" placeholder="Search profession...">
+        <div id="roadmapSuggestions"></div>
+
+        <div id="roadmapLoader"></div>
+        <div id="roadmapResult"></div>
+    </section>
+
+
+    <!-- GUIDE QUIZ SECTION -->
+    <section id="guide" class="section hidden">
+        <h1>Guide Quiz</h1>
+
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="guideSection"></div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
