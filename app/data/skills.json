@@ -1,0 +1,94 @@
+{
+  "Software Engineer": {
+    "core_skills": [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "System Design",
+      "Database Management",
+      "Version Control (Git)"
+    ],
+    "tools": [
+      "VS Code",
+      "GitHub",
+      "Docker",
+      "Linux",
+      "Postman"
+    ],
+    "learning_path": [
+      "Master one language (C++/Python/Java)",
+      "Learn DSA deeply",
+      "Build 3–6 projects",
+      "Explore backend frameworks",
+      "Learn deployment (Cloud or Docker)"
+    ]
+  },
+  "Data Analyst": {
+    "core_skills": [
+      "Statistics & Probability",
+      "Data Cleaning",
+      "Data Visualization",
+      "Business Understanding",
+      "Basic Machine Learning"
+    ],
+    "tools": [
+      "Excel",
+      "SQL",
+      "Python (Pandas, NumPy)",
+      "Tableau",
+      "Power BI"
+    ],
+    "learning_path": [
+      "Learn Excel & SQL",
+      "Learn Python basics",
+      "Master Pandas & visualization",
+      "Build dashboards",
+      "Do domain-level projects"
+    ]
+  },
+  "Product Manager": {
+    "core_skills": [
+      "User Research",
+      "Analytical Reasoning",
+      "Leadership",
+      "Roadmapping",
+      "Communication"
+    ],
+    "tools": [
+      "Notion",
+      "Jira",
+      "Miro",
+      "Figma",
+      "Google Analytics"
+    ],
+    "learning_path": [
+      "Understand business fundamentals",
+      "Learn wireframing",
+      "Study user psychology",
+      "Learn prioritization frameworks",
+      "Build mock product case studies"
+    ]
+  },
+  "UI/UX Designer": {
+    "core_skills": [
+      "Visual Design",
+      "User Flow Design",
+      "Typography",
+      "Color Theory",
+      "Usability Testing"
+    ],
+    "tools": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Miro",
+      "Notion"
+    ],
+    "learning_path": [
+      "Learn UI fundamentals",
+      "Master Figma",
+      "Study UX case studies",
+      "Build wireframes & prototypes",
+      "Create a strong design portfolio"
+    ]
+  }
+}

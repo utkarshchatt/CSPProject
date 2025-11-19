@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What kind of work excites you the most?",
+      "options": [
+        "Solving technical challenges",
+        "Working with data and insights",
+        "Planning and decision-making",
+        "Designing beautiful experiences"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which activity feels the most natural to you?",
+      "options": [
+        "Building or coding something",
+        "Analyzing patterns in data",
+        "Organizing people or projects",
+        "Drawing or creating visuals"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What do you value most in a career?",
+      "options": [
+        "Continuous learning",
+        "Impactful insights",
+        "Leadership opportunities",
+        "Creativity and expression"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you prefer solving problems?",
+      "options": [
+        "Logically and step-by-step",
+        "Using evidence and data",
+        "By evaluating trade-offs",
+        "Through user-centered iteration"
+      ]
+    }
+  ],
+  "result_mapping": {
+    "A": "Software Engineer",
+    "B": "Data Analyst",
+    "C": "Product Manager",
+    "D": "UI/UX Designer"
+  }
+}

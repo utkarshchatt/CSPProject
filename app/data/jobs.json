@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "software-engineer",
+    "title": "Software Engineer",
+    "summary": "Design, build, and maintain applications using programming languages and frameworks.",
+    "body": "Software Engineers work across the full development lifecycle from planning to deployment. They develop scalable applications, write clean maintainable code, collaborate with cross-functional teams, and debug and optimize existing systems.",
+    "description": "Software Engineers design, build, and maintain applications using programming languages and frameworks. They work across the full development lifecycle from planning to deployment.",
+    "salary_range": "₹6 LPA – ₹45 LPA",
+    "key_tasks": [
+      "Develop scalable applications",
+      "Write clean, maintainable code",
+      "Collaborate with cross-functional teams",
+      "Debug and optimize existing systems"
+    ],
+    "required_skills": [
+      "Data Structures",
+      "Algorithms",
+      "System Design",
+      "Python / C++ / Java",
+      "Git & Version Control"
+    ],
+    "skills": [
+      {"name": "Data Structures"},
+      {"name": "Algorithms"},
+      {"name": "System Design"},
+      {"name": "Python / C++ / Java"},
+      {"name": "Git & Version Control"}
+    ],
+    "growth": "High",
+    "education": "B.Tech in CS/IT or equivalent, or strong project portfolio"
+  },
+  {
+    "slug": "data-analyst",
+    "title": "Data Analyst",
+    "summary": "Interpret data using statistical tools to help organizations make better decisions.",
+    "body": "Data Analysts focus on pattern discovery, reporting, and visualization. They collect and clean datasets, generate dashboards and reports, identify patterns and trends, and collaborate with business teams to drive data-informed decisions.",
+    "description": "Data Analysts interpret data using statistical tools to help organizations make better decisions. They focus on pattern discovery, reporting, and visualization.",
+    "salary_range": "₹4 LPA – ₹20 LPA",
+    "key_tasks": [
+      "Collect and clean datasets",
+      "Generate dashboards and reports",
+      "Identify patterns and trends",
+      "Collaborate with business teams"
+    ],
+    "required_skills": [
+      "Excel",
+      "SQL",
+      "Python",
+      "Statistics",
+      "Power BI / Tableau"
+    ],
+    "skills": [
+      {"name": "Excel"},
+      {"name": "SQL"},
+      {"name": "Python"},
+      {"name": "Statistics"},
+      {"name": "Power BI / Tableau"}
+    ],
+    "growth": "High",
+    "education": "Any quantitative field or certification in analytics"
+  },
+  {
+    "slug": "product-manager",
+    "title": "Product Manager",
+    "summary": "Guide the strategy, design, and execution of products.",
+    "body": "Product Managers balance customer needs, business goals, and technical possibilities. They define product vision and roadmap, prioritize features, conduct user research, and coordinate engineering and design teams to deliver successful products.",
+    "description": "Product Managers guide the strategy, design, and execution of products. They balance customer needs, business goals, and technical possibilities.",
+    "salary_range": "₹8 LPA – ₹60 LPA",
+    "key_tasks": [
+      "Define product vision and roadmap",
+      "Prioritize features",
+      "Conduct user research",
+      "Coordinate engineering and design teams"
+    ],
+    "required_skills": [
+      "Business Strategy",
+      "User Research",
+      "Communication",
+      "Agile Methodologies",
+      "Analytical Thinking"
+    ],
+    "skills": [
+      {"name": "Business Strategy"},
+      {"name": "User Research"},
+      {"name": "Communication"},
+      {"name": "Agile Methodologies"},
+      {"name": "Analytical Thinking"}
+    ],
+    "growth": "Very High",
+    "education": "Any degree + strong leadership and analytical skills"
+  },
+  {
+    "slug": "ui-ux-designer",
+    "title": "UI/UX Designer",
+    "summary": "Create intuitive, visually appealing digital experiences.",
+    "body": "UI/UX Designers use user research, prototyping, and aesthetic design principles to craft exceptional user experiences. They conduct user research, create wireframes and prototypes, design user interfaces, and test and refine user flows.",
+    "description": "UI/UX Designers create intuitive, visually appealing digital experiences through user research, prototyping, and aesthetic design principles.",
+    "salary_range": "₹3 LPA – ₹25 LPA",
+    "key_tasks": [
+      "Conduct user research",
+      "Create wireframes and prototypes",
+      "Design user interfaces",
+      "Test and refine user flows"
+    ],
+    "required_skills": [
+      "Figma",
+      "User Research",
+      "Visual Design",
+      "Interaction Design",
+      "Usability Testing"
+    ],
+    "skills": [
+      {"name": "Figma"},
+      {"name": "User Research"},
+      {"name": "Visual Design"},
+      {"name": "Interaction Design"},
+      {"name": "Usability Testing"}
+    ],
+    "growth": "High",
+    "education": "Design degree or portfolio of UX work"
+  }
+]
