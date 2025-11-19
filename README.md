@@ -10,10 +10,11 @@ A web application that helps students explore career paths using role explainers
 
 ## Tech Stack
 - HTML, CSS, JavaScript
-- Node.js
-- MySQL
+- Python for back-end
+- Fast API integration
+- JSON files for data
 
 ## How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/username/project.git
+   git clone https://github.com/utkarshchatt/CSPProject.git
