@@ -1,32 +1,82 @@
-
+from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+import json
 import os
 
-from fastapi import FastAPI
-from .api import roles, guide, users, quiz
+app = FastAPI()
 
-app = FastAPI(title="Career Dashboard API")
+# CORS (allows frontend to talk to backend)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Path to frontend folder
-frontend_path = os.path.join(os.path.dirname(__file__), "..", "frontend")
-frontend_path = os.path.abspath(frontend_path)
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-# Serve static files (CSS, JS, JSON files)
-app.mount("/static", StaticFiles(directory=frontend_path), name="static")
+def load_json(filename):
+    with open(os.path.join(DATA_DIR, filename), "r") as f:
+        return json.load(f)
 
-# Serve index.html at root
-@app.get("/", include_in_schema=False)
-def serve_index():
-    return FileResponse(os.path.join(frontend_path, "index.html"))
+# -------------------------
+#   ROUTES
+# -------------------------
 
+@app.get("/roles")
+def get_roles(search: str = Query(None)):
+    roles = load_json("jobs.json")
+    
+    # If search parameter provided, filter roles
+    if search:
+        search_lower = search.lower()
+        roles = [
+            role for role in roles 
+            if search_lower in role["title"].lower() or 
+               search_lower in role.get("description", "").lower()
+        ]
+    
+    return roles
 
-app.include_router(roles.router)
-app.include_router(guide.router)
-app.include_router(users.router)
-app.include_router(quiz.router)
+@app.get("/roles/{slug}")
+def get_role(slug: str):
+    roles = load_json("jobs.json")
+    for role in roles:
+        if role["slug"] == slug:
+            return role
+    return {"error": "Role not found"}
 
+@app.get("/guide/questions")
+def guide_questions():
+    return load_json("guideQuiz.json")
 
-@app.get("/")
-def root():
-    return {"message": "Career Dashboard Backend Running 🚀"}
+@app.post("/guide/recommend")
+def recommend(data: dict):
+    # Get the answers from the payload
+    answers = data.get("answers", [])
+    
+    # Load roles/jobs data
+    roles = load_json("jobs.json")
+    
+    # Simple scoring logic - you can enhance this
+    recommendations = [
+        {"role": "Software Engineer", "match_score": 87},
+        {"role": "Data Scientist", "match_score": 80},
+        {"role": "UX Designer", "match_score": 75}
+    ]
+    
+    return {"recommendations": recommendations}
+
+@app.get("/roadmap")
+def get_roadmap():
+    return load_json("skills.json")
+
+# Serve frontend files
+# Get the parent directory (go up one level from 'app' folder)
+FRONTEND_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
+app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
